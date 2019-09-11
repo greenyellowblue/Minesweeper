@@ -1,0 +1,6 @@
+var gorilla := Pic.FileNew ("test.jpg") 
+setscreen("graphics: 1000,1000")
+var newWidth := Pic.Width (gorilla) 
+var newHeight := Pic.Height (gorilla) 
+var newPic := Pic.Scale (gorilla, newWidth div 10, newHeight div 4)
+Pic.Draw (newPic,0,0,picCopy)
